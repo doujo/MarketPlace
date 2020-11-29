@@ -18,6 +18,9 @@ export const LoginScreen = () => {
 				source={backgroundImage}
 				style={styles.backgroundContainer}/>
 			<View style={styles.loginCardContainer}>
+				<Text style={styles.screenTitle}>
+					Welcome<br/>Back
+				</Text>
 				<View style={styles.cardContainer}>
 					<Text style={styles.textTitle}>Sign In</Text>
 				</View>

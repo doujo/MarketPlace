@@ -16,6 +16,13 @@ export const styles = StyleSheet.create({
 		alignSelf: 'start',
     width: '100%',
   },
+	screenTitle: {
+		position: 'absolute',
+		fontSize: 40,
+		fontWeight: 400,
+		color: '#fff',
+		top: -213
+	},
 	loginCardContainer: {
 		flex: 3,
 		alignSelf: 'end',
