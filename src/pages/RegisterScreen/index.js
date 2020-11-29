@@ -18,6 +18,9 @@ export const RegisterScreen = () => {
 				source={backgroundImage}
 				style={styles.backgroundContainer}/>
 			<View style={styles.loginCardContainer}>
+				<Text style={styles.screenTitle}>
+				  Let Start
+				</Text>
 				<View style={styles.cardContainer}>
 					<Text style={styles.textTitle}>Sign Up</Text>
 				</View>

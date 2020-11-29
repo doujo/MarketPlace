@@ -12,12 +12,19 @@ export const styles = StyleSheet.create({
 		alignItems: 'flex-end'
 	},
 	backgroundContainer: {
-		flex: 1,
+		flex: 2,
 		alignSelf: 'start',
     width: '100%',
   },
+	screenTitle: {
+		position: 'absolute',
+		fontSize: 40,
+		fontWeight: 400,
+		color: '#fff',
+		top: -100
+	},
 	loginCardContainer: {
-		flex: 6,
+		flex: 5,
 		alignSelf: 'end',
 		top: -48,
 		width: '100%',
