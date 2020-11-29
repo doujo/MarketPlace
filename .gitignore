@@ -7,6 +7,8 @@ npm-debug.*
 *.key
 *.mobileprovision
 *.orig.*
+*.js.swo
+*.js.swp
 *.swp
 *.swo
 web-build/
