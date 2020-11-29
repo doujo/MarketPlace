@@ -8,7 +8,7 @@ import {
 } from 'react-native'
 
 import { styles } from './style.js'
-const { splashBackground } = { uri: '../../../assets/images/splash.png' }
+const splashBackground = require('../../../assets/images/splash.png')
 
 export const SplashScreen = () => {
 	return(
@@ -18,15 +18,6 @@ export const SplashScreen = () => {
 				source={splashBackground}
 			>
 			</ImageBackground>
-			<Image
-						source={splashBackground}
-						style={{
-							width: 60,
-							height: 60,
-							marginTop: 100
-						}}
-					/>
-			<Text>tes splash</Text>
 		</View>
 	)
 }
