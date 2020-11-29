@@ -8,10 +8,13 @@ import {
 	StatusBar
 } from 'react-native';
 
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+
 import { styles } from './style.js'
 const backgroundImage = require('../../../assets/images/background2.png');
 
-export const RegisterScreen = () => {
+export const RegisterScreen = ({ navigation }) => {
 	return(
 		<View style={styles.mainContainer}>
 			<Image
@@ -61,7 +64,9 @@ export const RegisterScreen = () => {
 					<Text style={styles.secondaryActionText}>
 						Already have an account ?
 					</Text>
-					<TouchableOpacity style={styles.secondaryActionButton}>
+					<TouchableOpacity
+						onPress={() => navigation.navigate('LoginScreen')}
+						style={styles.secondaryActionButton}>
 						Sign in
 					</TouchableOpacity>
 				</View>

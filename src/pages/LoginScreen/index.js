@@ -11,7 +11,7 @@ import {
 import { styles } from './style.js'
 const backgroundImage = require('../../../assets/images/background3.png');
 
-export const LoginScreen = () => {
+export const LoginScreen = ({ navigation }) => {
 	return(
 		<View style={styles.mainContainer}>
 			<Image
@@ -50,7 +50,9 @@ export const LoginScreen = () => {
 					<Text style={styles.secondaryActionText}>
 						Forgot Password ?
 					</Text>
-					<TouchableOpacity style={styles.secondaryActionButton}>
+					<TouchableOpacity
+						onPress={() => navigation.push('RegisterScreen')}
+						style={styles.secondaryActionButton}>
 						Sign up
 					</TouchableOpacity>
 				</View>

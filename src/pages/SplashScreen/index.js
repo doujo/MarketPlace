@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import {
 	View,
 	Text,
@@ -10,7 +10,13 @@ import {
 import { styles } from './style.js'
 const splashBackground = require('../../../assets/images/splash.png')
 
-export const SplashScreen = () => {
+export const SplashScreen = ({ navigation }) => {
+	useEffect(() => {
+		setTimeout(() => {
+			navigation.navigate('WelcomeScreen');
+		}, 2000)
+	}, []);
+
 	return(
 		<View style={styles.splashScreen}>
 			<ImageBackground

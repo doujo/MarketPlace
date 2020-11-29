@@ -7,11 +7,11 @@ import {
 	ImageBackground, Image,
 	StatusBar
 } from 'react-native';
+import { styles } from './style.js';
 
-import { styles } from './style.js'
 const backgroundImage = require('../../../assets/images/background1.png');
 
-export const WelcomeScreen = () => {
+export const WelcomeScreen = ({ navigation }) => {
 	return(
 		<View style={styles.mainContainer}>
 			<Image
@@ -25,6 +25,7 @@ export const WelcomeScreen = () => {
 					<View style={styles.formGroup}>
 						<TouchableOpacity
 							style={styles.btnPrimary}
+							onPress={() => navigation.push('RegisterScreen')}
 						>
 						  Register
 						</TouchableOpacity>
@@ -32,6 +33,7 @@ export const WelcomeScreen = () => {
 					<View style={styles.formGroup}>
 						<TouchableOpacity
 							style={styles.btnSecondary}
+							onPress={() => navigation.push('LoginScreen')}
 						>
 							Login
 						</TouchableOpacity>
